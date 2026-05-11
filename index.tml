@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Metafit</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="hero">
+  <nav>
+    <h1>Metafit</h1>
+    <a href="login.html" class="btn">Entrar</a>
+  </nav>
+
+  <div class="hero-content">
+    <h2>Seu App de Treinos</h2>
+    <p>Treine com inteligência, acompanhe resultados e alcance seus objetivos.</p>
+    <a href="cadastro.html" class="btn-primary">Começar Agora</a>
+  </div>
+</header>
+
+<section class="features">
+  <div class="card">
+    <h3>Treinos Personalizados</h3>
+    <p>Monte sua rotina ideal.</p>
+  </div>
+
+  <div class="card">
+    <h3>Acompanhamento</h3>
+    <p>Veja sua evolução semanal.</p>
+  </div>
+
+  <div class="card">
+    <h3>Comunidade</h3>
+    <p>Participe de desafios.</p>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Metafit - Todos os direitos reservados</p>
+</footer>
+
+</body>
+</html>
