@@ -1,74 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, sans-serif;
+  font-family: 'Poppins', sans-serif;
+}
+
+:root {
+  --bg: #07111f;
+  --card: rgba(255,255,255,0.06);
+  --border: rgba(255,255,255,0.1);
+  --primary: #00ff88;
+  --secondary: #00c3ff;
+  --text: #ffffff;
+  --muted: #94a3b8;
 }
 
 body {
-  background: #0f172a;
-  color: white;
+  background:
+    radial-gradient(circle at top left, rgba(0,255,136,0.15), transparent 30%),
+    radial-gradient(circle at bottom right, rgba(0,195,255,0.15), transparent 30%),
+    var(--bg);
+  color: var(--text);
+  min-height: 100vh;
 }
 
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  padding: 25px 8%;
+  backdrop-filter: blur(10px);
+}
+
+nav h1 {
+  font-size: 32px;
+  font-weight: 700;
+  background: linear-gradient(90deg,var(--primary),var(--secondary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .hero {
   min-height: 100vh;
-  background: linear-gradient(135deg,#111827,#1e293b);
 }
 
 .hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  margin-top: 150px;
+  padding: 100px 20px;
 }
 
 .hero-content h2 {
-  font-size: 60px;
+  font-size: 72px;
+  max-width: 900px;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  max-width: 700px;
+  color: var(--muted);
+  font-size: 20px;
+  margin-bottom: 35px;
 }
 
 .btn,
 .btn-primary,
 button {
-  background: #22c55e;
-  color: white;
-  border: none;
-  padding: 12px 24px;
-  border-radius: 10px;
-  cursor: pointer;
-  text-decoration: none;
-}
-
-.features {
-  display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
-  gap: 20px;
-  padding: 50px;
-}
-
-.card,
-.stat-card,
-.workout-card,
-.profile-card,
-.progress-box,
-.auth-box,
-.onboarding-box {
-  background: #1e293b;
-  padding: 25px;
-  border-radius: 20px;
-}
-
-.center-screen {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-
-.auth-box,
-.onboarding-box {
-}
+  margin
